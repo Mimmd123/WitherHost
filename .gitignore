@@ -35,3 +35,16 @@ coverage/
 # Other
 *.log
 .vercel
+
+# Capacitor/Android Build
+android/
+ios/
+*.apk
+*.aab
+*.jks
+*.keystore
+release.keystore
+local.properties
+.gradle/
+build/
+*.iml

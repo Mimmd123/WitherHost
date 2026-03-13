@@ -9,7 +9,12 @@
     "lint": "next lint",
     "build:android": "next build && npx cap copy android",
     "cap:sync": "npx cap sync android",
-    "cap:copy": "npx cap copy android"
+    "cap:copy": "npx cap copy android",
+    "cap:open": "npx cap open android",
+    "android:setup": "npm run build && npx cap add android && npx cap sync android",
+    "android:debug": "cd android && ./gradlew assembleDebug",
+    "android:release": "cd android && ./gradlew assembleRelease",
+    "android:clean": "cd android && ./gradlew clean"
   },
   "dependencies": {
     "next": "^14.2.0",
